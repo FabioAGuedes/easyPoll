@@ -1,3 +1,53 @@
+/* Cabeçalho */
 h1 {
-    color: blue;
+    color: blue !important; /* TEMP */
+    flex: 0.3;
+    text-align: center;
+    
+}
+
+#ad {
+    flex: 0.7;
+    text-align: center;
+}
+
+h1, #ad {
+    border: 2px solid red; /* TEMP */
+    margin: 0 !important;
+    padding: 1.2%;
+}
+
+
+header {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    border: 2px solid greenyellow; /* TEMP */
+}
+
+/* Menu de Navegação */
+
+
+/* Main */
+#main {
+    display: flex;
+    flex-direction: row;
+    height: 80vh;
+}
+
+#sectionMain {
+    flex: 0.75;
+    border: 2px solid rgb(116, 46, 173)
+}
+ul li {
+    list-style-type: none; /* idealizar para icone relacionado ao tema da enquete */
+}
+
+.hide {
+    display: none;
+}
+
+#login {
+    flex: 0.25;
+    border: 2px solid rgb(40, 206, 248);
 }

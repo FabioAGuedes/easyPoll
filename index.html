@@ -10,15 +10,60 @@
 </head>
 <body>
     <header>
-        <h1 id="title">Easy Poll</h1>        
+        <h1 id="title">Easy Poll</h1>
+        <div id="ad">Propagandas</div>     
     </header>
     
-    <nav>
-        nav
-    </nav>
-    <div class="main">
-        <section></section> <!-- Aqui ficará o conteúdo do site -->
-        <form action="/login" method="post">
+
+    <!-- BARRA DE NAVEGAÇÕES-->
+    <nav class="navbar navbar-expand-lg bg-body-tertiary">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="#">Easy Poll</a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="#">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Contato</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Sobre</a>
+              </li>
+            </ul>
+
+            <form class="d-flex" role="search"> <!-- PRECISA DE ESTILOS -->
+              <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+              <button class="btn btn-outline-success" type="submit">Search</button>
+            </form>
+
+          </div>
+        </div>
+      </nav>
+
+    <!-- MAIN -->
+    <div id="main">
+        <section id="sectionMain">SEÇÃO PRINCIPAL DO SITE
+            <!-- criar aqui um botão para chamativa dos 2 ids abaixo -->
+            <ul id="enquetesComunidade">
+                <li>a</li>
+                <li>b</li>
+                <li>c</li>                
+            </ul>
+            <ul id="suasEnquetes" class="hide">
+                <li>myA</li>
+                <li>myB</li>
+                <li>myC</li>
+            </ul>
+
+
+        </section>
+
+
+        <form id="login" action="/login" method="post"> <!-- PRECISA DE ESTILOS -->
             <label for="username">Nome de usuário:</label>
             <input type="text" id="username" name="username">
             <label for="password">Senha:</label>
@@ -27,7 +72,10 @@
            </form>
     </div>
 
-    <footer>Rodapé</footer>    
+    <footer>Rodapé
+        <div>Contato</div>
+        <div>Sobre</div>
+    </footer>    
     
 </body>
 </html>
