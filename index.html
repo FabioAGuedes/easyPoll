@@ -9,14 +9,18 @@
     <script src="js/scripts.js"></script>
 </head>
 <body>
+    <!-- Plano de fundo para todo o site -->
+    <div class="background">
+      <img src="public/img/AuroraBrilhante.jpeg" alt="Aurora Boreal brilhante" class="bg-image">
+    </div>
+
     <header>
         <h1 id="title">Easy Poll</h1>
         <div id="ad">Propagandas</div>     
-    </header>
-    
+    </header>    
 
     <!-- BARRA DE NAVEGAÇÕES-->
-    <nav class="navbar navbar-expand-lg bg-body-tertiary">
+    <nav id="navMain" class="navbar navbar-expand-lg bg-body-tertiary">
         <div class="container-fluid">
           <a class="navbar-brand" href="#">Easy Poll</a>
           <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -36,8 +40,8 @@
             </ul>
 
             <form class="d-flex" role="search"> <!-- PRECISA DE ESTILOS -->
-              <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
-              <button class="btn btn-outline-success" type="submit">Search</button>
+              <input class="form-control me-2" type="search" placeholder="Pesquisar" aria-label="Search">
+              <button class="btn btn-outline-primary" type="submit">Lupa</button>
             </form>
 
           </div>
@@ -63,12 +67,24 @@
         </section>
 
 
-        <form id="login" action="/login" method="post"> <!-- PRECISA DE ESTILOS -->
-            <label for="username">Nome de usuário:</label>
-            <input type="text" id="username" name="username">
-            <label for="password">Senha:</label>
-            <input type="password" id="password" name="password">
-            <button type="submit">Entrar</button>
+        <form id="loginForm" action="/login" method="post"> <!-- PRECISA DE ESTILOS -->
+
+          <div class="mb-1">
+            <label for="username"></label>
+            <input type="text" id="userLogin" name="userLogin" placeholder="login" class="form-control">
+          </div>
+
+            <div>
+              <label for="password"></label>
+              <input type="password" id="password" name="password" placeholder="senha" class="form-control">
+            </div>
+
+            <div class="cantLogon">
+              <a href="/forgot-password" class="forgotPsw">Esqueci minha senha</a>
+              <a href="/new-user" class="newUser">Eu quero me cadastrar</a>
+            </div>
+            
+            <button class="btn btn-outline-success enterBtn" type="submit" >Entrar</button>
            </form>
     </div>
 
